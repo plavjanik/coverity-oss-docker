@@ -1,0 +1,2 @@
+#!/bin/sh
+docker build -t ${IMAGE_NAME} --build-arg COVERITY_PROJECT=${COVERITY_PROJECT} --build-arg COVERITY_TOKEN=${COVERITY_TOKEN} .
