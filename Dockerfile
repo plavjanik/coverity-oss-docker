@@ -1,8 +1,7 @@
 FROM adoptopenjdk:8-jdk-hotspot-bionic
-ARG COVERITY_PROJECT=$COVERITY_PROJECT
-ARG COVERITY_TOKEN
-RUN echo ${COVERITY_TOKEN}
-RUN echo ${COVERITY_PROJECT}
+ENV COVERITY_PROJECT=
+RUN echo 1: ${COVERITY_TOKEN}
+RUN echo 2: ${COVERITY_PROJECT}
 RUN exit 1
 RUN apt-get update \
  && apt-get install -y \
