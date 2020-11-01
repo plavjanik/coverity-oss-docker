@@ -41,7 +41,7 @@ docker exec -it covo curl --form token=$COVERITY_TOKEN \
   --form file=@cov-int.tgz \
   --form version="master" \
   --form description="Automated Coverity Scan" \
-  "https://scan.coverity.com/builds?project=${COVERITY_PROJECT/\/%2f}"
+  "https://scan.coverity.com/builds?project=${COVERITY_PROJECT/\//%2f}"
 ```
 
 ## Jenkins
